@@ -3,6 +3,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBCardHeader } from "mdbreact";
 import { useDispatch } from "react-redux";
 import { withRouter } from "react-router-dom";
 import ContactForm from "./ContactForm";
+import Header from "../../CommonComponents/Header";
 
 const AddContact = (props) => {
   const dispatch = useDispatch();
@@ -16,9 +17,7 @@ const AddContact = (props) => {
   return (
     <Fragment>
       <MDBContainer>
-        <MDBCardHeader color="deep-orange lighten-1" className="mb-5">
-          <h3>Add Contact</h3>
-        </MDBCardHeader>
+        <Header title="Add Contact" />
         <MDBRow>
           <MDBCol md="6">
             <ContactForm onSubmit={saveContact} submitButtonText="Add" />

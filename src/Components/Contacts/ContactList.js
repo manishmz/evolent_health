@@ -11,6 +11,7 @@ import {
 } from "mdbreact";
 import { useSelector, useDispatch } from "react-redux";
 import { withRouter } from "react-router-dom";
+import Header from "../../CommonComponents/Header";
 
 const ContactList = (props) => {
   const contactList = useSelector((state) => state.contactList);
@@ -143,9 +144,7 @@ const ContactList = (props) => {
   return (
     <Fragment>
       <MDBContainer>
-        <MDBCardHeader color="deep-orange lighten-1" className="mb-5">
-          <h3>Contacts</h3>
-        </MDBCardHeader>
+        <Header title="Contacts" />
         <MDBRow>
           <MDBCol md="12">
             <MDBBtn

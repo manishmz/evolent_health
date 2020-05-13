@@ -4,6 +4,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import { useSelector, useDispatch } from "react-redux";
 import { withRouter } from "react-router-dom";
 import ContactForm from "./ContactForm";
+import Header from "../../CommonComponents/Header";
 
 const EditContact = (props) => {
   let { id } = useParams();
@@ -22,7 +23,7 @@ const EditContact = (props) => {
   return (
     <Fragment>
       <MDBContainer>
-        <h2>Edit Contact</h2>
+        <Header title="Edit Contact" />
         <MDBRow>
           <MDBCol md="6">
             {editContact ? (

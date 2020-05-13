@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { useParams } from "react-router-dom";
 import {
   MDBContainer,
@@ -8,6 +8,7 @@ import {
   MDBCardHeader,
 } from "mdbreact";
 import { useSelector } from "react-redux";
+import Header from "../../CommonComponents/Header";
 
 const ViewContact = (props) => {
   let { id } = useParams();
@@ -19,9 +20,7 @@ const ViewContact = (props) => {
   return (
     <Fragment>
       <MDBContainer>
-        <MDBCardHeader color="deep-orange lighten-1" className="mb-5">
-          <h3>View Contact</h3>
-        </MDBCardHeader>
+        <Header title="View Contact" />
         <MDBRow>
           <MDBCol md="6">
             {!viewContact ? (
