@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  margin-top: 50px;
 }
 
 .App-logo {
@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.checkbox {
+  height: calc(1.5em + -0.25rem + 2px) !important;
+}
+.error {
+  color: red;
+  font-size: small;
+}
+.align-center {
+  text-align: center;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
